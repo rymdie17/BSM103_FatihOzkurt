@@ -1,1 +1,0 @@
-# BSM103_FatihOzkurt
