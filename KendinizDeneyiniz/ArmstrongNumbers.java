@@ -28,7 +28,7 @@ public class ArmstrongNumbers {
 				System.out.println(start + " bir Armstrong sayıdır." );		//bu sayı(start) bir armstrong sayıdır.
 			}
 			
-			start++;
-		}
-	}
-}
+			start++;  //start ı 1 arttır.
+		}//closeWhile
+	}//closeMain
+}//closeClass
