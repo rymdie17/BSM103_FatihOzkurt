@@ -11,7 +11,6 @@ public class TelegramYanyan {
 		System.out.println("Yan yana kaç kere olsun: ");
 		int yanyana = 2*scanner.nextInt()-1;
 		
-		
 		for (int satir = N; satir > 0; satir--) {
 			
 			for (int bosluk = 0; bosluk < N-satir; bosluk++) {
@@ -33,8 +32,6 @@ public class TelegramYanyan {
 				}		
 			}
 			System.out.println();
-		}
-			
+		}	
 	}
-
 }
