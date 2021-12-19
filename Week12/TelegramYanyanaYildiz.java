@@ -30,7 +30,7 @@ public class TelegramYanyan {
 					}
 					System.out.print("*");
 				}		
-			}
+			} 
 			System.out.println();
 		}	
 	}
