@@ -5,7 +5,8 @@ public class matrixAddExp {
 	public static void main(String[] args) {
 		int[][] A = {{1,2}, {3,4}};
 		int[][] B = {{4,5}, {6,7}};
-		System.out.println(Arrays.toString(matrixAdd(A, B)));
+		int[][] C = matrixAdd(A, B);
+		System.out.println(Arrays.toString(C[0]) + "\n" + Arrays.toString(C[1]));
 	}
 
 	public static int[][] matrixAdd(int[][] A, int[][] B) {
