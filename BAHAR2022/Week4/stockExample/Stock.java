@@ -6,12 +6,12 @@ public class Stock {
 	private int totalProduct;
 	private int totalCost;
 
-	public Stock(String thestore) {
-		if (thestore == null) {
+	public Stock(String thestore) { // Stock sinifinin ozeliikleri
+		if (thestore.equals("")) { // Eger magaza ismi bossa bos isaretcisi hatasini ver
 			throw new NullPointerException();
 		}
-		this.store = thestore;
-		this.totalProduct = 0;
+		this.store = thestore; // store ozelligini constructordan gelen thestore a esitle
+		this.totalProduct = 0; // totalProduct ve totalCost un ilk degerlerini belirle
 		this.totalCost = 0;
 	}
 
@@ -21,19 +21,18 @@ public class Stock {
 
 		}
 
-		int marketValue = totalProduct * currentPrice;
-		return marketValue - totalCost;
+		int marketValue = totalProduct * currentPrice; // guncel birim fiyat ile satin alinan hisse sayisi carpilir
+		return marketValue - totalCost;		// guncel degerden toplam maliyet cikarilarak kar zarar hesabi yapilir.
 
 	}
 
-	public void purchase (int shares, int pricePerShare) { 
-		if (shares < 0 || pricePerShare < 0) { 
+	public void purchase(int shares, int pricePerShare) {
+		if (shares < 0 || pricePerShare < 0) {
 			throw new IllegalArgumentException();
+		}
 
-	}
-
-	totalProduct += shares; 
-	totalCost += shares * pricePerShare;
+		totalProduct += shares;	// baslangic degeri 0 olan toplam urun sayisina kullanici verisini ekliyoruz.
+		totalCost += shares * pricePerShare; // toplam maliyet hesaplanir
 
 	}
 }
