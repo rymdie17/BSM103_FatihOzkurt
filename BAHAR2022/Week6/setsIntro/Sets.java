@@ -22,7 +22,7 @@ public class Sets {
 		System.out.println(lists);
 		System.out.println(lists.size());
 		
-		// setler treeSet ve hashSet ten türetilir.
+		// setler treeSet ve hashSet ten turetilir.
 		// setlerde elemanlara indexleri ile erisemiyoruz.
 		// kume gibidir.
 		Set<String> sets = new HashSet<>();
@@ -41,7 +41,7 @@ public class Sets {
 		sets.clear();		// sets in icindekileri silme
 		System.out.println(sets);
 		
-		sets.addAll(lists);	// sets e lists i ekleme
+		sets.addAll(lists);	// sets e listsi ekleme
 		System.out.println(sets);
 		
 		
