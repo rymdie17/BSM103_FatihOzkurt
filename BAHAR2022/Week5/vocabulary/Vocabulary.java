@@ -9,8 +9,7 @@ import java.util.Scanner;
 public class Vocabulary {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File(
-				"C:\\Users\\Rymdie\\eclipse-workspace\\project1\\AlgoritmaHafta\\Week5\\sortExample\\test.txt"));
+		Scanner scanner = new Scanner(new File("test.txt"));
 
 		ArrayList<String> list = new ArrayList<>();
 		list = getWords(scanner);
@@ -31,7 +30,7 @@ public class Vocabulary {
 			// eleman ekleme
 			//words.add(word);
 			
-			// while içindeyken dosyadan gelen bir sonraki eleman listede yoksa ekle kontrolu
+			// while iï¿½indeyken dosyadan gelen bir sonraki eleman listede yoksa ekle kontrolu
 			if (!words.contains(word)) {
 				words.add(word);
 			}
