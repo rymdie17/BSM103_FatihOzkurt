@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class Vocabulary2 {
-
+   
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner scanner = new Scanner(new File("test.txt"));
 
