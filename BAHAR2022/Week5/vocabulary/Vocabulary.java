@@ -30,7 +30,7 @@ public class Vocabulary {
 			// eleman ekleme
 			//words.add(word);
 			
-			// while i�indeyken dosyadan gelen bir sonraki eleman listede yoksa ekle kontrolu
+			// while icindeyken dosyadan gelen bir sonraki eleman listede yoksa ekle kontrolu
 			if (!words.contains(word)) {
 				words.add(word);
 			}
