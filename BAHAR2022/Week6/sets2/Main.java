@@ -25,7 +25,7 @@ public class Main {
 		System.out.println("okumak istediginiz dosya ismi: "); 
 		Scanner input = new Scanner(System.in);
 		
-		String file=input.next(); 
+		String file = input.next(); 
 		
 		Scanner in=new Scanner(new File(file));
 		
@@ -35,6 +35,8 @@ public class Main {
 			String word = in.nextLine().toLowerCase(); 
 			temp.add(word);
 		}
+		
+		input.close();
 		
 		return temp;
 	}
