@@ -5,19 +5,19 @@ public class MergeSort {
 	public static void main(String args[]) {
 		int arr[] = { 12, 11, 13, 5, 6, 7 };
 
-		System.out.println("Given Array");
+		System.out.println("Dizinin ilk hali:");
 		printArray(arr);
 
 		MergeSort ob = new MergeSort();
 		ob.sort(arr, 0, arr.length - 1);
 
-		System.out.println("\nSorted array");
+		System.out.println("Son hali:");
 		printArray(arr);
 	}
 
 	void sort(int arr[], int l, int r) {
 		if (l < r) {
-			// Orta moktayi bulma
+			// Orta noktayi bulma
 			int m = l + (r - l) / 2;
 
 			sort(arr, l, m);
@@ -71,11 +71,12 @@ public class MergeSort {
 		}
 	}
 
-	static void printArray(int arr[]) {
-		int n = arr.length;
-		for (int i = 0; i < n; ++i)
-			System.out.print(arr[i] + " ");
-		System.out.println();
-	}
+	private static void printArray(int[] input) {
+        	System.out.print("[" + input[0]);
+        	for (int x = 1; x < input.length; x++) {
+           	 	System.out.print(", " + input[x]);
+        	}
+        System.out.println("]");
 
+    }
 }
